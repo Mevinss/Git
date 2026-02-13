@@ -1,27 +1,21 @@
 # 🐾 Animal Classification with MobileNetV2 & Streamlit
 
-Бұл жоба кескіндерді (суреттерді) талдап, олардың қай жануар екенін анықтауға арналған. Модель **MobileNetV2** архитектурасына негізделген және **Transfer Learning** технологиясы арқылы үйретілген. Пайдаланушы интерфейсі **Streamlit** арқылы жасалған.
+This project is a deep learning application designed to classify images of animals into 10 different categories. It leverages **Transfer Learning** with the **MobileNetV2** architecture and provides a user-friendly web interface built with **Streamlit**.
 
-## 🚀 Ерекшеліктері
-* **10 түрлі класс:** Ит, жылқы, піл, көбелек, тауық, мысық, сиыр, қой, өрмекші, тиін.
-* **Жоғары дәлдік:** Валидация кезінде ~96% дәлдік көрсетті.
-* **Қазақ тілінде:** Класс атаулары мен интерфейс қазақ тіліне бейімделген.
-* **Веб-интерфейс:** Суретті жүктеп, нәтижені бірден көруге болады.
+## 🚀 Features
+* **10 Animal Classes:** Dog, Horse, Elephant, Butterfly, Chicken, Cat, Cow, Sheep, Spider, and Squirrel.
+* **High Performance:** Achieved ~96% validation accuracy using fine-tuning techniques.
+* **Kazakh Language Support:** The model output and UI are localized in Kazakh.
+* **Web Interface:** Users can upload images (JPG, PNG) and get instant predictions with confidence scores.
 
-## 🛠 Технологиялық стек
-* **Python** (Негізгі тіл)
-* **TensorFlow / Keras** (Модель құру және үйрету)
-* **MobileNetV2** (Pre-trained модель)
-* **Streamlit** (Веб-қосымша)
-* **Ngrok** (Жергілікті серверді интернетке шығару)
+## 🛠 Tech Stack
+* **Python:** Core programming language.
+* **TensorFlow / Keras:** For model building, data augmentation, and training.
+* **MobileNetV2:** Pre-trained base model for efficient feature extraction.
+* **Streamlit:** For the interactive web dashboard.
+* **Ngrok:** Used to tunnel the local Streamlit server for public access.
 
-## 📂 Құрылымы
-- `қаз__Image_classification_animals_.ipynb`: Модельді үйретуге арналған ноутбук.
-- `app.py`: Streamlit қосымшасының коды.
-- `class_names_kz.npy`: Қазақша класс атаулары сақталған файл.
-- `animals_classifier_mobilenetv2.keras`: Үйретілген модель файлы.
-
-## 🔧 Іске қосу нұсқаулығы
-1. Керекті кітапханаларды орнатыңыз:
+## 🔧 Setup & Installation
+1. **Clone the repository:**
    ```bash
-   pip install tensorflow streamlit pillow numpy pyngrok
+   git clone [https://github.com/Mevinss/animal-classification.git](https://github.com/Mevinss/animal-classification.git)
